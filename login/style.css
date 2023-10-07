@@ -1,0 +1,21 @@
+
+
+.poto{
+    display: flex;
+}
+
+.wrapper{
+    width: 800px;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#slide-1 :targetv ~ .poto{
+    margin: left 0px;
+}
+
+#slide-2 :targetv ~ .poto {
+    margin: left -100%;
+}
+
