@@ -1,98 +1,124 @@
-
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>DG~Store</title>
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> RexxyStore </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="stylesheet" href="styleB2.css">
+      <link rel="stylesheet" href="card.css">
+   </head>
   <body>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styleB2.css">
- 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- 
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-       <div class="container">
-          <div class="navbar-header">
-             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-             <span class="sr-only">Toggle navigation</span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             </button>
-             <a class="navbar-brand" href="#"> <img src="images/BANNER2.jpg" alt="Logo Solodev"></a>
-          </div>
-          <div id="navbar" class="collapse navbar-collapse">
-             <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                   <ul class="dropdown-menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li class="dropdown-header">Nav header</li>
-                      <li><a href="#">Separated link</a></li>
-                      <li><a href="#">One more separated link</a></li>
-                   </ul>
-                </li>
-             </ul>
-          </div>
-          <!--/.nav-collapse -->
-       </div>
-    </nav>
-    <!-- Begin page content -->
-    <div class="container">
-       <div class="page-header">
-          <h1>Sticky Header & Footer </h1>
-       </div>
-       <div class="card">
-
-        <div class="imgBox">
-          <img src="https://down-id.img.susercontent.com/file/08dfd383d5440cc992a75eaa8ad1f564" alt="mouse corsair" class="mouse">
-        </div>
-      
-        <div class="contentBox">
-          <h3>Mouse Corsair M65</h3>
-          <h2 class="price">61.<small>98</small> €</h2>
-          <a href="#" class="buy">Buy Now</a>
-        </div>
-      
-      </div>   
+   <div class="container border mb-4 mt-4 rounded-3 shadow bg-white">
+     <!--menu-->
+   <nav class="d-md-flex p-3">
+      <div><h1>R-Store</h1></div>
+      <div class="ms-auto my-auto">
+         <ul class="list-inline m-o">
+            <li class="list-inline-item mx-md-3"><a href="" class="text-decoration-none text-dark fw-bold">Home</a></li>
+            <li class="list-inline-item mx-md-3"><a href="" class="text-decoration-none text-dark fw-bold">tentang kami</a></li>
+            <li class="list-inline-item mx-md-3"><a href="" class="text-decoration-none text-dark fw-bold">777</a></li>
+         </ul>
       </div>
+   </nav>  
 
-    <footer class="footer">
-       <div class="ct-footer-post">
-          <div class="container">
-             <div class="inner-left">
-                <ul>
-                   <li>
-                      <a href="">FAQ</a>
-                   </li>
-                   <li>
-                      <a href="">News</a>
-                   </li>
-                   <li>
-                      <a href="">Contact Us</a>
-                   </li>
-                </ul>
-             </div>
-             <div class="inner-right">
-                <p>
-                   Copyright&#169; 2023 DG-STORE.&nbsp;<a href="">Privacy Policy</a>
-                </p>
-                <p>
-                   <a class="ct-u-motive-color" href="" target="_blank">Web Design</a> by <b>DIMAS</b> </a>
-                </p>
-             </div>
+   <!--Banner-->
+   <div class="px-4 mb-4">
+      <img src="images/BANNER2.jpg" class="w-100 rounded-3"/>
+   </div>
+   </div>
+
+  <!--catalog-->
+   <h3 class="text-center">Terlaris</h3>
+  <div class="text-center w-50 mx-auto fw-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa quasi optio vero quidem odit sed architecto, culpa delectus minus, voluptate saepe cum incidunt suscipit eos illo voluptatum minima, perspiciatis aperiam.</div>
+    
+  <div class="row row-cols-md-3 row-cols-2 gx-5 p-5 grid">
+   
+    <div class="col mb-5">
+      <div class="card ">
+         <img src="images/hedsed1.jpg" class="card-img-top imgBox" >
+         <div class="card-body">
+          <h3>Mouse Corsair M65</h3>
+          <h5 class="card-title">Card title</h5>
+         
+         </div>
+         <div class="card-footer d-md-flex">
+            <a class="btn btm-sm btn-primary d-block">info</a>
+            <span class="ms-auto text-danger fw-bold d-block text-center">Rp. 179.999,00</span>
           </div>
+         </div>
        </div>
-    </footer>
- 
+       
+       <div class="col mb-5">
+         <div class="card">
+            <img src="images/hedsed1.jpg" class="card-img-top imgBox" >
+            <div class="card-body">
+              <h3>Mouse Corsair M65</h3>
+              <h5 class="card-title">Card title</h5>
+            </div>
+            <div class="card-footer d-md-flex">
+              <a class="btn btm-sm btn-primary d-block">info</a>
+              <span class="ms-auto text-danger fw-bold d-block text-center">Rp. 179.999,00</span>
+            </div>
+           </div>
+         </div>
+
+          <div class="col mb-5">
+            <div class="card">
+               <img src="images/hedsed1.jpg" class="card-img-top imgBox" >
+               <div class="card-body">
+                <h3>Mouse Corsair M65</h3>
+                 <h5 class="card-title">Card title</h5>
+               </div>
+               <div class="card-footer d-md-flex">
+                <a class="btn btm-sm btn-primary d-block">info</a>
+                <span class="ms-auto text-danger fw-bold d-block text-center">Rp. 179.999,00</span>
+              </div>
+             </div>
+           </div>
+             </div>
+         </div>
+
+
+         <!--Footer-->
+         <div class="px-4 py-4 text-center ">
+            <div class="mx-auto w-75">
+               <footer class="footer">
+                  <div class="waves">
+                    <div class="wave" id="wave1"></div>
+                    <div class="wave" id="wave2"></div>
+                    <div class="wave" id="wave3"></div>
+                    <div class="wave" id="wave4"></div>
+                  </div>
+                  <ul class="social-icon">
+                    <li class="social-icon__item"><a class="social-icon__link" href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                      </a></li>
+                    <li class="social-icon__item"><a class="social-icon__link" href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                      </a></li>
+                    <li class="social-icon__item"><a class="social-icon__link" href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                      </a></li>
+                    <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/fmtr_17/">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                      </a></li>
+                  </ul>
+                  <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+              
+                  </ul>
+                  <p>&copy;2021 Nadine Coelho | All Rights Reserved</p>
+                </footer>
+                <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            </div>
+         </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>

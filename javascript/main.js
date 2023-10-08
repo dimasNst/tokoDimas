@@ -1,24 +1,28 @@
-document.querySelectorAll('.btnInfo').forEach(item=>{
-    item.addEventListener('click', (e) => {
-        let parent = e.target.parentNode.parentNode;
-        
-        let gambar = parent.querySelector('.card-img-top').src;
-        let harga = parent.querySelector('.harga').innerHTML;
-        let judul = parent.querySelector('.card-text').innerHTML;
-        let deskripsi = parent.querySelector('.deskripsi')? parent.querySelector('.deskripsi').innerHTML : '<i>tidak ada informasi yang tersedia</i>';
+let slideIndex = 1;
+showSlides(slideIndex);
 
-        
-        let tombolModal = document.querySelector('.btnModal');
-        tombolModal.click();
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-        document.querySelector('.modalTitle').innerHTML = judul;
-        let image = document.createElement('img');
-        image.src = gambar ;
-        image.classList.add ('w-100');
-        document.querySelector('.modalImage').innerHTML = '';
-        document.querySelector('.modalImage').appendChild(image);
-        document.querySelector('.modalDeskripsi').innerHTML = deskripsi;
-        document.querySelector('.modalHarga') .innerHTML = harga;
-    });
-});
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}

@@ -1,0 +1,40 @@
+/* Styling the entire footer section */
+footer.flex-rw {
+  background-color: #333; /* Ganti dengan warna latar belakang yang Anda inginkan */
+  color: #fff; /* Ganti dengan warna teks yang Anda inginkan */
+  padding: 20px; /* Atur padding sesuai kebutuhan */
+}
+
+/* Styling the header in the first list */
+.footer-list-header {
+  font-size: 1.2em; /* Atur ukuran font sesuai kebutuhan */
+  margin-top: 0; /* Hilangkan margin atas */
+}
+
+/* Styling the anchor links in the first list */
+.footer-list-top a {
+  color: #fff; /* Ganti dengan warna teks yang Anda inginkan */
+  text-decoration: none; /* Hilangkan garis bawah */
+}
+
+/* Styling the social icons */
+.footer-social-icons-wrapper a {
+  color: #fff; /* Ganti dengan warna ikon sosial media yang Anda inginkan */
+  font-size: 1.5em; /* Atur ukuran ikon sesuai kebutuhan */
+  margin-right: 10px; /* Atur jarak antara ikon sosial media */
+}
+
+/* Styling the copyright section */
+.footer-bottom-section {
+  background-color: #222; /* Ganti dengan warna latar belakang yang Anda inginkan */
+  color: #fff; /* Ganti dengan warna teks yang Anda inginkan */
+  text-align: center; /* Tengahkan teks */
+  padding: 10px; /* Atur padding sesuai kebutuhan */
+}
+
+/* Styling the links in the copyright section */
+.footer-bottom-section a {
+  color: #fff; /* Ganti dengan warna teks link yang Anda inginkan */
+  text-decoration: none; /* Hilangkan garis bawah */
+  margin: 0 10px; /* Atur jarak antara link */
+}
