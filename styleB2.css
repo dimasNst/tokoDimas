@@ -1,4 +1,12 @@
 
+/* CSS untuk latar belakang */
+
+body {
+  background-image: url('https://i.pinimg.com/736x/97/37/7c/97377c14b85a3354ee2a6fa145a4ddf4.jpg'); /* Ganti 'gambar-latar-belakang.jpg' dengan URL atau path gambar latar belakang yang sesuai */
+  background-size: cover; /* Memastikan gambar latar belakang mengisi seluruh layar */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar latar belakang */
+  background-attachment: fixed; /* Membuat gambar latar belakang tetap saat menggulir */
+}
 
 
 
@@ -87,3 +95,122 @@
     vertical-align: middle;
   }
   
+  /* CSS untuk elemen <nav> dengan class "d-md-flex p-3 topi" */
+
+nav.d-md-flex.p-3.topi {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+nav.d-md-flex.p-3.topi h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav.d-md-flex.p-3.topi ul.list-inline {
+  list-style: none;
+  padding: 0;
+}
+
+nav.d-md-flex.p-3.topi ul.list-inline li.list-inline-item {
+  margin-right: 20px;
+}
+
+nav.d-md-flex.p-3.topi ul.list-inline li.list-inline-item:last-child {
+  margin-right: 0;
+}
+
+nav.d-md-flex.p-3.topi a.text-decoration-none.text-dark {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav.d-md-flex.p-3.topi a.text-decoration-none.text-dark:hover {
+  color: #ccc;
+}
+
+/* CSS untuk header seperti Tokopedia */
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #e25a00; /* Warna hover sesuai dengan Tokopedia */
+}
+
+.search input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.search button {
+  background-color: #e25a00; /* Warna tombol sesuai dengan Tokopedia */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search button:hover {
+  background-color: #ff752e; /* Warna hover sesuai dengan Tokopedia */
+}
+
+/* CSS untuk animasi slide dari kiri ke kanan */
+
+.slider {
+  overflow: hidden; /* Elemen ini akan memotong kontennya */
+}
+
+.slider img {
+  width: 50%; /* Ukuran gambar mengisi seluruh slider */
+  max-width: none; /* Hilangkan batasan lebar maksimum */
+  animation: slide 9s linear infinite; /* Animasi slide dengan durasi 5 detik dan berulang tak terbatas */
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(-100%); /* Mulai dari posisi di luar layar sebelah kiri */
+  }
+  100% {
+      transform: translateX(100%); /* Pindah ke posisi di luar layar sebelah kanan */
+  }
+}

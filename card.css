@@ -1,0 +1,75 @@
+.imgBox .info{
+    
+   
+    /* Gaya lainnya untuk kartu (jika ada) */
+    }
+    
+    .card img {
+        max-width: 100%; /* Gambar akan memiliki lebar maksimum 100% dari kotak kartu */
+        
+       
+    height: auto;    /* Ketinggian gambar akan disesuaikan agar tidak terdistorsi */
+    }
+
+    /* CSS untuk animasi kartu saat di-hover */
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+/* CSS untuk desain keren pada card */
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Membesarkan card saat di-hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.btn.info {
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.btn.info:hover {
+    background-color: #0056b3;
+}
+
+.text-danger {
+    color: #f70015;
+}
+
+.card-footer {
+    background-color: #040405;
+    padding: 10px;
+}
+
+.imgBox {
+    max-height: 500px; /* Menentukan tinggi maksimum gambar */
+    object-fit: cover; /* Memastikan gambar terisi dengan baik */
+}
+
+/* Untuk mengatur spasi antara card, jika diperlukan */
+.col.mb-5 {
+    margin-bottom: 20px;
+}
+
